@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.6 on win32)" generated="20220906 20:45:21.112" rpa="false" schemaversion="3">
+<suite id="s1" name="Kvlchk Robotframework" source="D:\QA Automated Testing\1\kvlchk_robotframework">
+<suite id="s1-s1" name="Test Login Rf" source="D:\QA Automated Testing\1\kvlchk_robotframework\test_login_rf.robot">
+<test id="s1-s1-t1" name="Remind password functionality" line="38">
+<kw name="Open login page">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220906 20:45:21.868" level="INFO">Opening browser 'Chrome' to base url 'https://scouts-test.futbolkolektyw.pl/en'.</msg>
+<status status="PASS" starttime="20220906 20:45:21.867" endtime="20220906 20:45:27.766"/>
+</kw>
+<kw name="Title Should Be" library="SeleniumLibrary">
+<arg>Scouts panel - sign in</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20220906 20:45:27.778" level="INFO">Page title is 'Scouts panel - sign in'.</msg>
+<status status="PASS" starttime="20220906 20:45:27.767" endtime="20220906 20:45:27.779"/>
+</kw>
+<status status="PASS" starttime="20220906 20:45:21.867" endtime="20220906 20:45:27.779"/>
+</kw>
+<kw name="Click on the remind password">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="__next"]/form/div/div[1]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220906 20:45:27.781" level="INFO">Clicking element 'xpath=//*[@id="__next"]/form/div/div[1]/a'.</msg>
+<status status="PASS" starttime="20220906 20:45:27.781" endtime="20220906 20:45:27.893"/>
+</kw>
+<status status="PASS" starttime="20220906 20:45:27.780" endtime="20220906 20:45:27.894"/>
+</kw>
+<kw name="Type in remindemail">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${EMAILFIELD}</arg>
+<arg>${blank}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220906 20:45:27.897" level="INFO">Typing text '' into text field 'xpath=//*[@id="__next"]/div[1]/div/div[1]/div/div/input'.</msg>
+<status status="PASS" starttime="20220906 20:45:27.895" endtime="20220906 20:45:28.139"/>
+</kw>
+<status status="PASS" starttime="20220906 20:45:27.894" endtime="20220906 20:45:28.140"/>
+</kw>
+<kw name="Click on the send button">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id='__next']/div[1]/div/div[2]/button/span[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220906 20:45:28.142" level="INFO">Clicking element 'xpath=//*[@id='__next']/div[1]/div/div[2]/button/span[1]'.</msg>
+<status status="PASS" starttime="20220906 20:45:28.141" endtime="20220906 20:45:28.300"/>
+</kw>
+<status status="PASS" starttime="20220906 20:45:28.140" endtime="20220906 20:45:28.300"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220906 20:45:28.301" endtime="20220906 20:45:31.582"/>
+</kw>
+<status status="PASS" starttime="20220906 20:45:21.864" endtime="20220906 20:45:31.583"/>
+</test>
+<doc>Suite secription #automated tests for scout website</doc>
+<status status="PASS" starttime="20220906 20:45:21.175" endtime="20220906 20:45:31.586"/>
+</suite>
+<status status="PASS" starttime="20220906 20:45:21.117" endtime="20220906 20:45:31.592"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Kvlchk Robotframework">Kvlchk Robotframework</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Test Login Rf">Kvlchk Robotframework.Test Login Rf</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
